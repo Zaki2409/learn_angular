@@ -1,10 +1,42 @@
 <h1 id="toc"> PIPES </h1>
-<a href="#happy-birthday">happy birthday v1</a>
+<a href="#happy-birthday1">happy birthday 1</a>
+<a href="#happy-birthday2">happy birthday 2</a>
+<a href="#birthday-pipe-changing">birthday pipe changing</a>
+<a href="#power-booster">power booster</a>
+<a href="#power-boost-calc">power caluculator</a>
+
 
 <hr>
-<h2 id="#happy-birthday">hero birthday v1</h2>
-<app-hero-birthday></app-hero-birthday>
+<h2 id="#happy-birthday1">hero birthday v1</h2>
+
+
 
 <hr>
-<h2>hero birthday format change </h2>
-<app-hero-birthday2></app-hero-birthday2>
+<p>the hero birth day is {{birthday | date}}</p>
+
+
+
+<hr>
+<h2 id="#happy-birthday2">hero birthday format change </h2>
+<p>the hero birthday is {{ birthday1 | date:format}}</p>
+<button type="button" (click)="toggleFormat()" >click to change the format</button>
+
+
+
+<hr>
+<h2 id="#birthday-pipe-changing"> birthday pipe changing </h2>
+<p>the chained hero's birthday is {{birthday |date| uppercase}}</p>
+<p>chained birthday {{birthday|date:'fullDate' | uppercase}}</p>
+<p>chained birthday {{ (birthday|date:'fullDate' )| uppercase}} </p>
+
+
+<!-- 
+<hr>
+<h2 id="#power-booster"> power booster</h2>
+<p>suoer booster = {{2 | exponentialStrength: 10}} </p> -->
+
+
+<hr>
+<h2 id="#power-boost-calc">Power Booster</h2>
+<p>Super power boost: {{2 | exponentialStrength: 10}} </p>
+   

@@ -25,8 +25,9 @@
     <hr />
   
     <h2>Model property of a custom component:</h2>
-    <app-item-detail [childItem]="parentItem"></app-item-detail>
-    <app-item-detail childItem="parentItem"></app-item-detail>
+    <app-item-detail [childItem]="parentItem" (toparent)="fromchild($event)"></app-item-detail>
+    
+    <p>{{datafromchild}}</p>
   
     <h3>Pass objects:</h3>
     <app-item-list [items]="currentItems"></app-item-list>
@@ -52,4 +53,5 @@
    -->
     <p>"<span [innerHTML]="evilTitle"></span>" is the <i>property bound</i> evil title.</p>
   </div>
-  
+  <button type="button" (click)="clickme()">click</button>
+  <p ></p>

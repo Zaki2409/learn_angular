@@ -11,6 +11,12 @@ itemImageUrl = '../assets/phone.svg';
   isUnchanged = true;
   classes = 'special';
   parentItem = 'lamp';
+  datafromchild='no data';
+  fromchild(z:string) {
+ this.datafromchild=z;
+ const zz = 'the data which came from child is ' + z;
+ window.alert(zz);
+  };
 
   currentItems = [{
     id: 21,
@@ -21,4 +27,11 @@ itemImageUrl = '../assets/phone.svg';
   propertyTitle = 'Property binding';
 
   evilTitle = 'Template <script>alert("evil never sleeps")</script> Syntax';
+  clickme() {
+    const msg = this.gettext();
+    window.alert(msg);
+  }
+  gettext() {
+    return 'zaki'
+  }
 }

@@ -10,8 +10,9 @@ import { AttributeBindingComponent } from './components/attribute-binding/attrib
 import { CompWithHostBindingComponent } from './components/attribute-binding/comp-with-host-binding.component';
 import { MyInputWithAttributeDecoratorComponent } from './components/attribute-binding/my-input-with-attribute-decorator.component';
 import { PipesComponent } from './components/pipes/pipes.component';
-import { HeroBirthday2Component } from './components/pipes/hero-birthday2/hero-birthday2.component';
-import {HeroBirthdayComponent} from './components/pipes/hero-birthday1.component'
+import {ExponentialStrengthPipe} from './components/pipes/services/exponential-strength.pipe';
+import { SvgTemplateComponent } from './components/svg-template/svg-template.component'
+
 
 @NgModule({
   declarations: [
@@ -23,8 +24,9 @@ import {HeroBirthdayComponent} from './components/pipes/hero-birthday1.component
     CompWithHostBindingComponent,
     MyInputWithAttributeDecoratorComponent,
     PipesComponent,
-    HeroBirthday2Component,
-    HeroBirthdayComponent
+    ExponentialStrengthPipe,
+    SvgTemplateComponent
+   
   ],
   imports: [
     BrowserModule,
