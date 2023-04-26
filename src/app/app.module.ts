@@ -11,7 +11,8 @@ import { CompWithHostBindingComponent } from './components/attribute-binding/com
 import { MyInputWithAttributeDecoratorComponent } from './components/attribute-binding/my-input-with-attribute-decorator.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import {ExponentialStrengthPipe} from './components/pipes/services/exponential-strength.pipe';
-import { SvgTemplateComponent } from './components/svg-template/svg-template.component'
+import { SvgTemplateComponent } from './components/svg-template/svg-template.component';
+import { DirectivesComponent } from './components/directives/directives.component'
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { SvgTemplateComponent } from './components/svg-template/svg-template.com
     MyInputWithAttributeDecoratorComponent,
     PipesComponent,
     ExponentialStrengthPipe,
-    SvgTemplateComponent
+    SvgTemplateComponent,
+    DirectivesComponent
    
   ],
   imports: [
