@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +13,8 @@ import { MyInputWithAttributeDecoratorComponent } from './components/attribute-b
 import { PipesComponent } from './components/pipes/pipes.component';
 import {ExponentialStrengthPipe} from './components/pipes/services/exponential-strength.pipe';
 import { SvgTemplateComponent } from './components/svg-template/svg-template.component';
-import { DirectivesComponent } from './components/directives/directives.component'
+import { DirectivesComponent } from './components/directives/directives.component';
+import { FormsComponent } from './components/forms/forms.component'
 
 
 @NgModule({
@@ -27,12 +29,14 @@ import { DirectivesComponent } from './components/directives/directives.componen
     PipesComponent,
     ExponentialStrengthPipe,
     SvgTemplateComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    FormsComponent
    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
